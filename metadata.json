@@ -1,0 +1,8 @@
+{
+  "name": "Keralayaatra - Kerala Taxi & Tour Packages",
+  "description": "Your trusted local partner for comfortable exploring across Kochi, Munnar hills, Alleppey backwaters, and Varkala beaches, with transparent direct pricing and local drivers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

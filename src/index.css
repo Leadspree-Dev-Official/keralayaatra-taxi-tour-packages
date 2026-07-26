@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary-green: #12351e;
+  --color-primary-lime: #a9c126;
+  --color-muted-green: #0b421d;
+  --color-inverse-green: #617366;
+  --color-surface-bg: #fbfdfb;
+}
+
+:root {
+  --brand-color: var(--color-primary-lime);
+  --brand-color-light: oklch(from var(--color-primary-lime) l c h / 0.1);
+  --brand-color-hover: oklch(from var(--color-primary-lime) calc(l - 0.1) c h);
+  --ring: var(--color-primary-lime);
+  --saffron: var(--color-primary-lime);
+}
+
+/* Custom fade-in and slide-up animations for premium interaction flow */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbar hiding utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
